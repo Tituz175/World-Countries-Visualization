@@ -13,7 +13,7 @@ header {
   background-position: center;
   height: 70vh;
   text-align: center;
-  padding: 8rem 0rem;
+  padding: 9rem 0rem;
   color: white;
 }
 #title {
@@ -82,6 +82,7 @@ button:hover {
   font-weight: 300;
   text-align: center;
 }
+
 #input-container input:focus {
   text-align: left;
 }

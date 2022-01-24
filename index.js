@@ -1,3 +1,4 @@
+const inputContainer = document.querySelector("#input-container");
 const inputElement = document.querySelector("#input-container input");
 const countryContainer = document.querySelector("#country-container");
 const subTitle = document.querySelector("#subtitle");
@@ -12,7 +13,6 @@ countries.forEach((element) => {
   countriesRev.unshift(element);
 });
 const buttons = document.getElementsByTagName("button");
-// console.log(countriesRev);
 
 subTitle.innerHTML += countries.length;
 
@@ -104,6 +104,7 @@ let buttonFunc = (
 };
 
 buttons[0].addEventListener("click", () => {
+  inputContainer.style.display = "flex";
   response.innerHTML = "";
   inputElement.value = "";
   showCountry();
@@ -111,6 +112,7 @@ buttons[0].addEventListener("click", () => {
 });
 
 buttons[1].addEventListener("click", () => {
+  inputContainer.style.display = "flex";
   response.innerHTML = "";
   inputElement.value = "";
   showCountry();
@@ -118,6 +120,7 @@ buttons[1].addEventListener("click", () => {
 });
 
 buttons[2].addEventListener("click", () => {
+  inputContainer.style.display = "none";
   buttons[0].style.backgroundColor = "#a855f7";
   buttons[1].style.backgroundColor = "#a855f7";
   inputElement.value = "";

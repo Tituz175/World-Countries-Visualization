@@ -86,7 +86,7 @@ button:hover {
 #input-container {
   width: 40%;
   margin: 3rem auto 0rem;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 #input-container span:first-child {
